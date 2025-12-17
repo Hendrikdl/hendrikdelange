@@ -142,7 +142,7 @@ function Home() {
         <h2>Ready to Take Control of Your Finances?</h2>
         <p>Contact me today for a free consultation.</p>
         <Button as={Link} to="/contact" variant="success" size="lg">
-          Contact Us Now
+          Contact Me Now
         </Button>
       </Container>
     </div>

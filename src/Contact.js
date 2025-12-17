@@ -49,7 +49,7 @@ function Contact() {
 
   return (
     <Container style={{ padding: '20px', maxWidth: '600px' }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>Contact Us</h1>
+      <h1 style={{ textAlign: 'center', marginBottom: '30px' }}>Contact Me</h1>
       <Form onSubmit={handleSubmit}>
         <Row>
           <Col md={6}>

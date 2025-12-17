@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 function Services() {
   return (
     <Container style={{ padding: '20px' }}>
-      <h1 style={{ textAlign: 'center', marginBottom: '40px' }}>Our Services</h1>
+      <h1 style={{ textAlign: 'center', marginBottom: '40px' }}>My Services</h1>
       <Row>
         <Col md={4} className="mb-4">
           <div className="p-3 bg-primary text-white rounded">
