@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button, Card, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import profile from './media/profile.jpg';
 
 function Home() {
   const [showMore, setShowMore] = useState(false);
@@ -60,7 +59,7 @@ function Home() {
           </Col>
           <Col md={6}>
             <img
-              src={profile}
+              src={`${process.env.PUBLIC_URL}/media/profile.jpg`}
               alt="Hendrik de Lange"
               style={{ width: '25%', borderRadius: '10px' }}
             />

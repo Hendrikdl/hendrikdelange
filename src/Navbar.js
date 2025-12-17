@@ -2,7 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-import logo from './media/logo.jpg';
 
 function NavbarComponent() {
     return (
@@ -11,7 +10,7 @@ function NavbarComponent() {
         <Container>
           <Navbar.Brand as={Link} to="/">
             <img
-              src={logo}
+              src={`${process.env.PUBLIC_URL}/media/logo.jpg`}
               alt="Logo"
               style={{ height: '40px', width: 'auto' }}
             />

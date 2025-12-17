@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import profile from './media/profile.jpg';
 
 function About() {
   return (
@@ -8,7 +7,7 @@ function About() {
       <Row className="justify-content-center">
         <Col md={8} className="text-center">
       <img 
-        src={profile}
+        src={`${process.env.PUBLIC_URL}/media/profile.jpg`}
         alt="Hendrik de Lange"
         style={{ width: '250px', height: '250px', borderRadius: '50%', margin: '20px 0', border: '5px solid #007bff' }} 
       />
