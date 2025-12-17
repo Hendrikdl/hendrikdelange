@@ -22,14 +22,16 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // EmailJS configuration - Replace with your actual IDs from EmailJS dashboard
-    const serviceId = 'your_service_id';
-    const templateId = 'your_template_id';
-    const userId = 'your_user_id';
+    // EmailJS configuration
+    const serviceId = 'service_js5rzy6';
+    const templateId = 'template_9zug8cd';
+    const userId = 'nIsRqBq4ln1m3FC_E';
+
+    console.log('Sending email with data:', formData);
 
     emailjs.send(serviceId, templateId, formData, userId)
       .then((result) => {
-        console.log(result.text);
+        console.log('Email sent successfully:', result.text);
         alert('Thank you for your message! We will get back to you soon.');
         setFormData({
           name: '',
@@ -40,8 +42,8 @@ function Contact() {
           message: ''
         });
       }, (error) => {
-        console.log(error.text);
-        alert('Failed to send message. Please try again.');
+        console.error('Email send failed:', error);
+        alert('Failed to send message. Please check console for details.');
       });
   };
 
