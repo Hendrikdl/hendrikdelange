@@ -61,7 +61,7 @@ function Home() {
             <img
               src={`${process.env.PUBLIC_URL}/media/profile.jpg`}
               alt="Hendrik de Lange"
-              style={{ width: '100%', borderRadius: '10px' }}
+              style={{ width: '25%', borderRadius: '10px' }}
             />
           </Col>
         </Row>
