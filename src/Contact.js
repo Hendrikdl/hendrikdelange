@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Row, Col } from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -20,8 +21,28 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder: In a real app, send data to server
-    alert('Thank you for your message! We will get back to you soon.');
+
+    // EmailJS configuration - Replace with your actual IDs from EmailJS dashboard
+    const serviceId = 'your_service_id';
+    const templateId = 'your_template_id';
+    const userId = 'your_user_id';
+
+    emailjs.send(serviceId, templateId, formData, userId)
+      .then((result) => {
+        console.log(result.text);
+        alert('Thank you for your message! We will get back to you soon.');
+        setFormData({
+          name: '',
+          surname: '',
+          contactNumber: '',
+          email: '',
+          serviceType: '',
+          message: ''
+        });
+      }, (error) => {
+        console.log(error.text);
+        alert('Failed to send message. Please try again.');
+      });
   };
 
   return (
