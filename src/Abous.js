@@ -6,7 +6,7 @@ function About() {
       <h1>About Me</h1>
       <img 
         src="/media/profile.jpg"
-        style={{ width: '400px', height: '400px', borderRadius: '50%', margin: '20px 0' }} 
+        style={{ width: '250px', height: '250px', borderRadius: '50%', margin: '20px 0' }} 
       />
       <p>
         With over 20 years of experience in the financial services industry, I bring a well‑rounded and practical approach to helping clients protect, grow, and manage their finances with confidence.
