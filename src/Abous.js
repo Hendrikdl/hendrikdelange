@@ -8,8 +8,9 @@ function About() {
         <Col md={8} className="text-center">
       <img 
         src={`${process.env.PUBLIC_URL}/media/profile.jpg`}
-            style={{ width: '250px', height: '250px', borderRadius: '50%', margin: '20px 0', border: '5px solid #007bff' }} 
-          />
+        alt="Hendrik de Lange"
+        style={{ width: '250px', height: '250px', borderRadius: '50%', margin: '20px 0', border: '5px solid #007bff' }} 
+      />
         </Col>
       </Row>
       <Row className="justify-content-center">
