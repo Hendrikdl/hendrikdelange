@@ -5,7 +5,7 @@ function About() {
     <div style={{ padding: '20px', textAlign: 'center' }}>
       <h1>About Me</h1>
       <img 
-        src="/media/profile.jpg"
+        src={`${process.env.PUBLIC_URL}/media/profile.jpg`}
         style={{ width: '250px', height: '250px', borderRadius: '50%', margin: '20px 0' }} 
       />
       <p>

@@ -19,7 +19,10 @@ function Home() {
         textAlign: 'center'
       }}>
         <Container>
-          <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>Welcome to Hendrik de Lange Financial Services</h1>
+          <h3 style={{ fontSize: '2rem', fontWeight: 'italic' }}>Welcome to</h3>
+          <h1 style={{ fontSize: '3rem', fontWeight: 'bold' }}>Hendrik de Lange</h1>
+          <h3 style={{ fontSize: '1.5rem', marginTop: '20px' }}>Independent Financial Advisor</h3>
+          
           <p style={{ fontSize: '1.2rem', margin: '20px 0' }}>
             Expert guidance in financial planning, investments, and wealth management.
           </p>
@@ -56,7 +59,7 @@ function Home() {
           </Col>
           <Col md={6}>
             <img
-              src="/media/profile.jpg"
+              src={`${process.env.PUBLIC_URL}/media/profile.jpg`}
               alt="Hendrik de Lange"
               style={{ width: '100%', borderRadius: '10px' }}
             />
